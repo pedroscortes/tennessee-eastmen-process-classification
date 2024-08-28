@@ -1,5 +1,5 @@
 'Class', 00, 'against', 01 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -19,7 +19,7 @@ Macro-averaged F1 = 1.000 %
 Micro-averaged F1 = 1.000 %
 ===============
 'Class', 00, 'against', 02 -> TestAcc: 0.9935
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -38,48 +38,28 @@ Micro-averaged Recall = 0.994 %
 Macro-averaged F1 = 0.994 %
 Micro-averaged F1 = 0.994 %
 ===============
-'Class', 00, 'against', 03 -> TestAcc: 0.6662
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 03 -> TestAcc: 0.6494
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (40, 20), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.68      0.65      0.66       390
-           1       0.66      0.68      0.67       383
+           0       0.65      0.66      0.65       390
+           1       0.65      0.64      0.64       383
 
-    accuracy                           0.67       773
-   macro avg       0.67      0.67      0.67       773
-weighted avg       0.67      0.67      0.67       773
+    accuracy                           0.65       773
+   macro avg       0.65      0.65      0.65       773
+weighted avg       0.65      0.65      0.65       773
 
-Accuracy= 66.624 %
-Macro-averaged Precision = 0.667 %
-Micro-averaged Precision = 0.666 %
-Macro-averaged Recall = 0.666 %
-Micro-averaged Recall = 0.666 %
-Macro-averaged F1 = 0.666 %
-Micro-averaged F1 = 0.666 %
+Accuracy= 64.942 %
+Macro-averaged Precision = 0.649 %
+Micro-averaged Precision = 0.649 %
+Macro-averaged Recall = 0.649 %
+Micro-averaged Recall = 0.649 %
+Macro-averaged F1 = 0.649 %
+Micro-averaged F1 = 0.649 %
 ===============
-'Class', 00, 'against', 04 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 05 -> TestAcc: 0.9987
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 04 -> TestAcc: 0.9987
+Best parameters: {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (50, 25), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -98,8 +78,8 @@ Micro-averaged Recall = 0.999 %
 Macro-averaged F1 = 0.999 %
 Micro-averaged F1 = 0.999 %
 ===============
-'Class', 00, 'against', 06 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 05 -> TestAcc: 1.0000
+Best parameters: {'activation': 'logistic', 'alpha': 0.0001, 'hidden_layer_sizes': (50, 25), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -118,8 +98,8 @@ Micro-averaged Recall = 1.000 %
 Macro-averaged F1 = 1.000 %
 Micro-averaged F1 = 1.000 %
 ===============
-'Class', 00, 'against', 07 -> TestAcc: 0.9974
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.001}
+'Class', 00, 'against', 06 -> TestAcc: 1.0000
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -130,36 +110,56 @@ Classification Report =
    macro avg       1.00      1.00      1.00       773
 weighted avg       1.00      1.00      1.00       773
 
-Accuracy= 99.741 %
-Macro-averaged Precision = 0.997 %
-Micro-averaged Precision = 0.997 %
-Macro-averaged Recall = 0.997 %
-Micro-averaged Recall = 0.997 %
-Macro-averaged F1 = 0.997 %
-Micro-averaged F1 = 0.997 %
+Accuracy= 100.000 %
+Macro-averaged Precision = 1.000 %
+Micro-averaged Precision = 1.000 %
+Macro-averaged Recall = 1.000 %
+Micro-averaged Recall = 1.000 %
+Macro-averaged F1 = 1.000 %
+Micro-averaged F1 = 1.000 %
 ===============
-'Class', 00, 'against', 08 -> TestAcc: 0.9871
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 07 -> TestAcc: 1.0000
+Best parameters: {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (40, 20), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.98      1.00      0.99       390
-           1       1.00      0.98      0.99       383
+           0       1.00      1.00      1.00       390
+           1       1.00      1.00      1.00       383
+
+    accuracy                           1.00       773
+   macro avg       1.00      1.00      1.00       773
+weighted avg       1.00      1.00      1.00       773
+
+Accuracy= 100.000 %
+Macro-averaged Precision = 1.000 %
+Micro-averaged Precision = 1.000 %
+Macro-averaged Recall = 1.000 %
+Micro-averaged Recall = 1.000 %
+Macro-averaged F1 = 1.000 %
+Micro-averaged F1 = 1.000 %
+===============
+'Class', 00, 'against', 08 -> TestAcc: 0.9858
+Best parameters: {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (50, 25), 'learning_rate_init': 0.01, 'solver': 'adam'}
+Classification Report =
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       390
+           1       0.99      0.98      0.99       383
 
     accuracy                           0.99       773
    macro avg       0.99      0.99      0.99       773
 weighted avg       0.99      0.99      0.99       773
 
-Accuracy= 98.706 %
-Macro-averaged Precision = 0.987 %
-Micro-averaged Precision = 0.987 %
-Macro-averaged Recall = 0.987 %
-Micro-averaged Recall = 0.987 %
-Macro-averaged F1 = 0.987 %
-Micro-averaged F1 = 0.987 %
+Accuracy= 98.577 %
+Macro-averaged Precision = 0.986 %
+Micro-averaged Precision = 0.986 %
+Macro-averaged Recall = 0.986 %
+Micro-averaged Recall = 0.986 %
+Macro-averaged F1 = 0.986 %
+Micro-averaged F1 = 0.986 %
 ===============
 'Class', 00, 'against', 09 -> TestAcc: 0.6158
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -178,28 +178,28 @@ Micro-averaged Recall = 0.616 %
 Macro-averaged F1 = 0.613 %
 Micro-averaged F1 = 0.616 %
 ===============
-'Class', 00, 'against', 10 -> TestAcc: 0.7969
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 10 -> TestAcc: 0.8629
+Best parameters: {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.79      0.82      0.80       390
-           1       0.81      0.78      0.79       383
+           0       0.84      0.90      0.87       390
+           1       0.89      0.83      0.86       383
 
-    accuracy                           0.80       773
-   macro avg       0.80      0.80      0.80       773
-weighted avg       0.80      0.80      0.80       773
+    accuracy                           0.86       773
+   macro avg       0.86      0.86      0.86       773
+weighted avg       0.86      0.86      0.86       773
 
-Accuracy= 79.690 %
-Macro-averaged Precision = 0.797 %
-Micro-averaged Precision = 0.797 %
-Macro-averaged Recall = 0.797 %
-Micro-averaged Recall = 0.797 %
-Macro-averaged F1 = 0.797 %
-Micro-averaged F1 = 0.797 %
+Accuracy= 86.287 %
+Macro-averaged Precision = 0.865 %
+Micro-averaged Precision = 0.863 %
+Macro-averaged Recall = 0.863 %
+Micro-averaged Recall = 0.863 %
+Macro-averaged F1 = 0.863 %
+Micro-averaged F1 = 0.863 %
 ===============
 'Class', 00, 'against', 11 -> TestAcc: 0.8655
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -219,7 +219,7 @@ Macro-averaged F1 = 0.865 %
 Micro-averaged F1 = 0.865 %
 ===============
 'Class', 00, 'against', 12 -> TestAcc: 0.9806
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -238,28 +238,28 @@ Micro-averaged Recall = 0.981 %
 Macro-averaged F1 = 0.981 %
 Micro-averaged F1 = 0.981 %
 ===============
-'Class', 00, 'against', 13 -> TestAcc: 0.9690
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 13 -> TestAcc: 0.9741
+Best parameters: {'activation': 'logistic', 'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.96      0.98      0.97       390
-           1       0.98      0.95      0.97       383
+           0       0.96      0.99      0.97       390
+           1       0.99      0.96      0.97       383
 
     accuracy                           0.97       773
    macro avg       0.97      0.97      0.97       773
 weighted avg       0.97      0.97      0.97       773
 
-Accuracy= 96.895 %
-Macro-averaged Precision = 0.970 %
-Micro-averaged Precision = 0.969 %
-Macro-averaged Recall = 0.969 %
-Micro-averaged Recall = 0.969 %
-Macro-averaged F1 = 0.969 %
-Micro-averaged F1 = 0.969 %
+Accuracy= 97.413 %
+Macro-averaged Precision = 0.975 %
+Micro-averaged Precision = 0.974 %
+Macro-averaged Recall = 0.974 %
+Micro-averaged Recall = 0.974 %
+Macro-averaged F1 = 0.974 %
+Micro-averaged F1 = 0.974 %
 ===============
 'Class', 00, 'against', 14 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -279,7 +279,7 @@ Macro-averaged F1 = 1.000 %
 Micro-averaged F1 = 1.000 %
 ===============
 'Class', 00, 'against', 15 -> TestAcc: 0.6300
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -298,68 +298,68 @@ Micro-averaged Recall = 0.630 %
 Macro-averaged F1 = 0.630 %
 Micro-averaged F1 = 0.630 %
 ===============
-'Class', 00, 'against', 16 -> TestAcc: 0.8590
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 16 -> TestAcc: 0.9366
+Best parameters: {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.86      0.85      0.86       390
-           1       0.85      0.86      0.86       383
+           0       0.91      0.96      0.94       390
+           1       0.96      0.91      0.93       383
 
-    accuracy                           0.86       773
-   macro avg       0.86      0.86      0.86       773
-weighted avg       0.86      0.86      0.86       773
+    accuracy                           0.94       773
+   macro avg       0.94      0.94      0.94       773
+weighted avg       0.94      0.94      0.94       773
 
-Accuracy= 85.899 %
-Macro-averaged Precision = 0.859 %
-Micro-averaged Precision = 0.859 %
-Macro-averaged Recall = 0.859 %
-Micro-averaged Recall = 0.859 %
-Macro-averaged F1 = 0.859 %
-Micro-averaged F1 = 0.859 %
+Accuracy= 93.661 %
+Macro-averaged Precision = 0.938 %
+Micro-averaged Precision = 0.937 %
+Macro-averaged Recall = 0.936 %
+Micro-averaged Recall = 0.937 %
+Macro-averaged F1 = 0.937 %
+Micro-averaged F1 = 0.937 %
 ===============
-'Class', 00, 'against', 17 -> TestAcc: 0.9120
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 17 -> TestAcc: 0.9418
+Best parameters: {'activation': 'logistic', 'alpha': 0.0001, 'hidden_layer_sizes': (30, 15), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.90      0.92      0.91       390
-           1       0.92      0.90      0.91       383
+           0       0.91      0.98      0.94       390
+           1       0.98      0.90      0.94       383
 
-    accuracy                           0.91       773
-   macro avg       0.91      0.91      0.91       773
-weighted avg       0.91      0.91      0.91       773
+    accuracy                           0.94       773
+   macro avg       0.94      0.94      0.94       773
+weighted avg       0.94      0.94      0.94       773
 
-Accuracy= 91.203 %
-Macro-averaged Precision = 0.912 %
-Micro-averaged Precision = 0.912 %
-Macro-averaged Recall = 0.912 %
-Micro-averaged Recall = 0.912 %
-Macro-averaged F1 = 0.912 %
-Micro-averaged F1 = 0.912 %
+Accuracy= 94.179 %
+Macro-averaged Precision = 0.945 %
+Micro-averaged Precision = 0.942 %
+Macro-averaged Recall = 0.941 %
+Micro-averaged Recall = 0.942 %
+Macro-averaged F1 = 0.942 %
+Micro-averaged F1 = 0.942 %
 ===============
-'Class', 00, 'against', 18 -> TestAcc: 0.9314
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.001}
+'Class', 00, 'against', 18 -> TestAcc: 0.9353
+Best parameters: {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (50, 25), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.88      1.00      0.94       390
-           1       1.00      0.86      0.93       383
+           0       0.89      1.00      0.94       390
+           1       1.00      0.87      0.93       383
 
-    accuracy                           0.93       773
+    accuracy                           0.94       773
    macro avg       0.94      0.93      0.93       773
-weighted avg       0.94      0.93      0.93       773
+weighted avg       0.94      0.94      0.94       773
 
-Accuracy= 93.144 %
-Macro-averaged Precision = 0.940 %
-Micro-averaged Precision = 0.931 %
-Macro-averaged Recall = 0.931 %
-Micro-averaged Recall = 0.931 %
-Macro-averaged F1 = 0.931 %
-Micro-averaged F1 = 0.931 %
+Accuracy= 93.532 %
+Macro-averaged Precision = 0.943 %
+Micro-averaged Precision = 0.935 %
+Macro-averaged Recall = 0.935 %
+Micro-averaged Recall = 0.935 %
+Macro-averaged F1 = 0.935 %
+Micro-averaged F1 = 0.935 %
 ===============
 'Class', 00, 'against', 19 -> TestAcc: 0.9276
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+Best parameters: {'activation': 'relu', 'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
@@ -378,883 +378,43 @@ Micro-averaged Recall = 0.928 %
 Macro-averaged F1 = 0.928 %
 Micro-averaged F1 = 0.928 %
 ===============
-'Class', 00, 'against', 20 -> TestAcc: 0.9004
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 20 -> TestAcc: 0.9172
+Best parameters: {'activation': 'logistic', 'alpha': 0.01, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       0.89      0.92      0.90       390
-           1       0.91      0.89      0.90       383
-
-    accuracy                           0.90       773
-   macro avg       0.90      0.90      0.90       773
-weighted avg       0.90      0.90      0.90       773
-
-Accuracy= 90.039 %
-Macro-averaged Precision = 0.901 %
-Micro-averaged Precision = 0.900 %
-Macro-averaged Recall = 0.900 %
-Micro-averaged Recall = 0.900 %
-Macro-averaged F1 = 0.900 %
-Micro-averaged F1 = 0.900 %
-===============
-'Class', 00, 'against', 21 -> TestAcc: 0.9172
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.92      0.92      0.92       390
-           1       0.92      0.91      0.92       383
+           0       0.91      0.93      0.92       390
+           1       0.93      0.90      0.92       383
 
     accuracy                           0.92       773
    macro avg       0.92      0.92      0.92       773
 weighted avg       0.92      0.92      0.92       773
 
 Accuracy= 91.721 %
-Macro-averaged Precision = 0.917 %
+Macro-averaged Precision = 0.918 %
 Micro-averaged Precision = 0.917 %
 Macro-averaged Recall = 0.917 %
 Micro-averaged Recall = 0.917 %
 Macro-averaged F1 = 0.917 %
 Micro-averaged F1 = 0.917 %
 ===============
-'Class', 00, 'against', 01 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
+'Class', 00, 'against', 21 -> TestAcc: 0.9224
+Best parameters: {'activation': 'tanh', 'alpha': 0.001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01, 'solver': 'adam'}
 Classification Report =
               precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 02 -> TestAcc: 0.9935
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.99      0.99      0.99       390
-           1       0.99      0.99      0.99       383
-
-    accuracy                           0.99       773
-   macro avg       0.99      0.99      0.99       773
-weighted avg       0.99      0.99      0.99       773
-
-Accuracy= 99.353 %
-Macro-averaged Precision = 0.994 %
-Micro-averaged Precision = 0.994 %
-Macro-averaged Recall = 0.994 %
-Micro-averaged Recall = 0.994 %
-Macro-averaged F1 = 0.994 %
-Micro-averaged F1 = 0.994 %
-===============
-'Class', 00, 'against', 03 -> TestAcc: 0.6662
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.68      0.65      0.66       390
-           1       0.66      0.68      0.67       383
-
-    accuracy                           0.67       773
-   macro avg       0.67      0.67      0.67       773
-weighted avg       0.67      0.67      0.67       773
-
-Accuracy= 66.624 %
-Macro-averaged Precision = 0.667 %
-Micro-averaged Precision = 0.666 %
-Macro-averaged Recall = 0.666 %
-Micro-averaged Recall = 0.666 %
-Macro-averaged F1 = 0.666 %
-Micro-averaged F1 = 0.666 %
-===============
-'Class', 00, 'against', 04 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 05 -> TestAcc: 0.9987
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 99.871 %
-Macro-averaged Precision = 0.999 %
-Micro-averaged Precision = 0.999 %
-Macro-averaged Recall = 0.999 %
-Micro-averaged Recall = 0.999 %
-Macro-averaged F1 = 0.999 %
-Micro-averaged F1 = 0.999 %
-===============
-'Class', 00, 'against', 06 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 07 -> TestAcc: 0.9974
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.001}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 99.741 %
-Macro-averaged Precision = 0.997 %
-Micro-averaged Precision = 0.997 %
-Macro-averaged Recall = 0.997 %
-Micro-averaged Recall = 0.997 %
-Macro-averaged F1 = 0.997 %
-Micro-averaged F1 = 0.997 %
-===============
-'Class', 00, 'against', 08 -> TestAcc: 0.9871
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99       390
-           1       1.00      0.98      0.99       383
-
-    accuracy                           0.99       773
-   macro avg       0.99      0.99      0.99       773
-weighted avg       0.99      0.99      0.99       773
-
-Accuracy= 98.706 %
-Macro-averaged Precision = 0.987 %
-Micro-averaged Precision = 0.987 %
-Macro-averaged Recall = 0.987 %
-Micro-averaged Recall = 0.987 %
-Macro-averaged F1 = 0.987 %
-Micro-averaged F1 = 0.987 %
-===============
-'Class', 00, 'against', 09 -> TestAcc: 0.6158
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.64      0.53      0.58       390
-           1       0.60      0.70      0.64       383
-
-    accuracy                           0.62       773
-   macro avg       0.62      0.62      0.61       773
-weighted avg       0.62      0.62      0.61       773
-
-Accuracy= 61.578 %
-Macro-averaged Precision = 0.620 %
-Micro-averaged Precision = 0.616 %
-Macro-averaged Recall = 0.617 %
-Micro-averaged Recall = 0.616 %
-Macro-averaged F1 = 0.613 %
-Micro-averaged F1 = 0.616 %
-===============
-'Class', 00, 'against', 10 -> TestAcc: 0.7969
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.79      0.82      0.80       390
-           1       0.81      0.78      0.79       383
-
-    accuracy                           0.80       773
-   macro avg       0.80      0.80      0.80       773
-weighted avg       0.80      0.80      0.80       773
-
-Accuracy= 79.690 %
-Macro-averaged Precision = 0.797 %
-Micro-averaged Precision = 0.797 %
-Macro-averaged Recall = 0.797 %
-Micro-averaged Recall = 0.797 %
-Macro-averaged F1 = 0.797 %
-Micro-averaged F1 = 0.797 %
-===============
-'Class', 00, 'against', 11 -> TestAcc: 0.8655
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.85      0.89      0.87       390
-           1       0.88      0.84      0.86       383
-
-    accuracy                           0.87       773
-   macro avg       0.87      0.87      0.87       773
-weighted avg       0.87      0.87      0.87       773
-
-Accuracy= 86.546 %
-Macro-averaged Precision = 0.866 %
-Micro-averaged Precision = 0.865 %
-Macro-averaged Recall = 0.865 %
-Micro-averaged Recall = 0.865 %
-Macro-averaged F1 = 0.865 %
-Micro-averaged F1 = 0.865 %
-===============
-'Class', 00, 'against', 12 -> TestAcc: 0.9806
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.98      0.98      0.98       390
-           1       0.98      0.98      0.98       383
-
-    accuracy                           0.98       773
-   macro avg       0.98      0.98      0.98       773
-weighted avg       0.98      0.98      0.98       773
-
-Accuracy= 98.060 %
-Macro-averaged Precision = 0.981 %
-Micro-averaged Precision = 0.981 %
-Macro-averaged Recall = 0.981 %
-Micro-averaged Recall = 0.981 %
-Macro-averaged F1 = 0.981 %
-Micro-averaged F1 = 0.981 %
-===============
-'Class', 00, 'against', 13 -> TestAcc: 0.9690
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.96      0.98      0.97       390
-           1       0.98      0.95      0.97       383
-
-    accuracy                           0.97       773
-   macro avg       0.97      0.97      0.97       773
-weighted avg       0.97      0.97      0.97       773
-
-Accuracy= 96.895 %
-Macro-averaged Precision = 0.970 %
-Micro-averaged Precision = 0.969 %
-Macro-averaged Recall = 0.969 %
-Micro-averaged Recall = 0.969 %
-Macro-averaged F1 = 0.969 %
-Micro-averaged F1 = 0.969 %
-===============
-'Class', 00, 'against', 14 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 15 -> TestAcc: 0.6300
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.63      0.65      0.64       390
-           1       0.63      0.61      0.62       383
-
-    accuracy                           0.63       773
-   macro avg       0.63      0.63      0.63       773
-weighted avg       0.63      0.63      0.63       773
-
-Accuracy= 63.001 %
-Macro-averaged Precision = 0.630 %
-Micro-averaged Precision = 0.630 %
-Macro-averaged Recall = 0.630 %
-Micro-averaged Recall = 0.630 %
-Macro-averaged F1 = 0.630 %
-Micro-averaged F1 = 0.630 %
-===============
-'Class', 00, 'against', 16 -> TestAcc: 0.8590
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.86      0.85      0.86       390
-           1       0.85      0.86      0.86       383
-
-    accuracy                           0.86       773
-   macro avg       0.86      0.86      0.86       773
-weighted avg       0.86      0.86      0.86       773
-
-Accuracy= 85.899 %
-Macro-averaged Precision = 0.859 %
-Micro-averaged Precision = 0.859 %
-Macro-averaged Recall = 0.859 %
-Micro-averaged Recall = 0.859 %
-Macro-averaged F1 = 0.859 %
-Micro-averaged F1 = 0.859 %
-===============
-'Class', 00, 'against', 17 -> TestAcc: 0.9120
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.90      0.92      0.91       390
-           1       0.92      0.90      0.91       383
-
-    accuracy                           0.91       773
-   macro avg       0.91      0.91      0.91       773
-weighted avg       0.91      0.91      0.91       773
-
-Accuracy= 91.203 %
-Macro-averaged Precision = 0.912 %
-Micro-averaged Precision = 0.912 %
-Macro-averaged Recall = 0.912 %
-Micro-averaged Recall = 0.912 %
-Macro-averaged F1 = 0.912 %
-Micro-averaged F1 = 0.912 %
-===============
-'Class', 00, 'against', 18 -> TestAcc: 0.9314
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.001}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.88      1.00      0.94       390
-           1       1.00      0.86      0.93       383
-
-    accuracy                           0.93       773
-   macro avg       0.94      0.93      0.93       773
-weighted avg       0.94      0.93      0.93       773
-
-Accuracy= 93.144 %
-Macro-averaged Precision = 0.940 %
-Micro-averaged Precision = 0.931 %
-Macro-averaged Recall = 0.931 %
-Micro-averaged Recall = 0.931 %
-Macro-averaged F1 = 0.931 %
-Micro-averaged F1 = 0.931 %
-===============
-'Class', 00, 'against', 19 -> TestAcc: 0.9276
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.92      0.94      0.93       390
-           1       0.94      0.91      0.93       383
-
-    accuracy                           0.93       773
-   macro avg       0.93      0.93      0.93       773
-weighted avg       0.93      0.93      0.93       773
-
-Accuracy= 92.755 %
-Macro-averaged Precision = 0.928 %
-Micro-averaged Precision = 0.928 %
-Macro-averaged Recall = 0.927 %
-Micro-averaged Recall = 0.928 %
-Macro-averaged F1 = 0.928 %
-Micro-averaged F1 = 0.928 %
-===============
-'Class', 00, 'against', 20 -> TestAcc: 0.9004
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.89      0.92      0.90       390
-           1       0.91      0.89      0.90       383
-
-    accuracy                           0.90       773
-   macro avg       0.90      0.90      0.90       773
-weighted avg       0.90      0.90      0.90       773
-
-Accuracy= 90.039 %
-Macro-averaged Precision = 0.901 %
-Micro-averaged Precision = 0.900 %
-Macro-averaged Recall = 0.900 %
-Micro-averaged Recall = 0.900 %
-Macro-averaged F1 = 0.900 %
-Micro-averaged F1 = 0.900 %
-===============
-'Class', 00, 'against', 21 -> TestAcc: 0.9172
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.92      0.92      0.92       390
-           1       0.92      0.91      0.92       383
+           0       0.94      0.90      0.92       390
+           1       0.90      0.94      0.92       383
 
     accuracy                           0.92       773
    macro avg       0.92      0.92      0.92       773
 weighted avg       0.92      0.92      0.92       773
 
-Accuracy= 91.721 %
-Macro-averaged Precision = 0.917 %
-Micro-averaged Precision = 0.917 %
-Macro-averaged Recall = 0.917 %
-Micro-averaged Recall = 0.917 %
-Macro-averaged F1 = 0.917 %
-Micro-averaged F1 = 0.917 %
-===============
-'Class', 00, 'against', 01 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 02 -> TestAcc: 0.9935
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.99      0.99      0.99       390
-           1       0.99      0.99      0.99       383
-
-    accuracy                           0.99       773
-   macro avg       0.99      0.99      0.99       773
-weighted avg       0.99      0.99      0.99       773
-
-Accuracy= 99.353 %
-Macro-averaged Precision = 0.994 %
-Micro-averaged Precision = 0.994 %
-Macro-averaged Recall = 0.994 %
-Micro-averaged Recall = 0.994 %
-Macro-averaged F1 = 0.994 %
-Micro-averaged F1 = 0.994 %
-===============
-'Class', 00, 'against', 03 -> TestAcc: 0.6662
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.68      0.65      0.66       390
-           1       0.66      0.68      0.67       383
-
-    accuracy                           0.67       773
-   macro avg       0.67      0.67      0.67       773
-weighted avg       0.67      0.67      0.67       773
-
-Accuracy= 66.624 %
-Macro-averaged Precision = 0.667 %
-Micro-averaged Precision = 0.666 %
-Macro-averaged Recall = 0.666 %
-Micro-averaged Recall = 0.666 %
-Macro-averaged F1 = 0.666 %
-Micro-averaged F1 = 0.666 %
-===============
-'Class', 00, 'against', 04 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 05 -> TestAcc: 0.9987
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 99.871 %
-Macro-averaged Precision = 0.999 %
-Micro-averaged Precision = 0.999 %
-Macro-averaged Recall = 0.999 %
-Micro-averaged Recall = 0.999 %
-Macro-averaged F1 = 0.999 %
-Micro-averaged F1 = 0.999 %
-===============
-'Class', 00, 'against', 06 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 07 -> TestAcc: 0.9974
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.001}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 99.741 %
-Macro-averaged Precision = 0.997 %
-Micro-averaged Precision = 0.997 %
-Macro-averaged Recall = 0.997 %
-Micro-averaged Recall = 0.997 %
-Macro-averaged F1 = 0.997 %
-Micro-averaged F1 = 0.997 %
-===============
-'Class', 00, 'against', 08 -> TestAcc: 0.9871
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.98      1.00      0.99       390
-           1       1.00      0.98      0.99       383
-
-    accuracy                           0.99       773
-   macro avg       0.99      0.99      0.99       773
-weighted avg       0.99      0.99      0.99       773
-
-Accuracy= 98.706 %
-Macro-averaged Precision = 0.987 %
-Micro-averaged Precision = 0.987 %
-Macro-averaged Recall = 0.987 %
-Micro-averaged Recall = 0.987 %
-Macro-averaged F1 = 0.987 %
-Micro-averaged F1 = 0.987 %
-===============
-'Class', 00, 'against', 09 -> TestAcc: 0.6158
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.64      0.53      0.58       390
-           1       0.60      0.70      0.64       383
-
-    accuracy                           0.62       773
-   macro avg       0.62      0.62      0.61       773
-weighted avg       0.62      0.62      0.61       773
-
-Accuracy= 61.578 %
-Macro-averaged Precision = 0.620 %
-Micro-averaged Precision = 0.616 %
-Macro-averaged Recall = 0.617 %
-Micro-averaged Recall = 0.616 %
-Macro-averaged F1 = 0.613 %
-Micro-averaged F1 = 0.616 %
-===============
-'Class', 00, 'against', 10 -> TestAcc: 0.7969
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.79      0.82      0.80       390
-           1       0.81      0.78      0.79       383
-
-    accuracy                           0.80       773
-   macro avg       0.80      0.80      0.80       773
-weighted avg       0.80      0.80      0.80       773
-
-Accuracy= 79.690 %
-Macro-averaged Precision = 0.797 %
-Micro-averaged Precision = 0.797 %
-Macro-averaged Recall = 0.797 %
-Micro-averaged Recall = 0.797 %
-Macro-averaged F1 = 0.797 %
-Micro-averaged F1 = 0.797 %
-===============
-'Class', 00, 'against', 11 -> TestAcc: 0.8655
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.85      0.89      0.87       390
-           1       0.88      0.84      0.86       383
-
-    accuracy                           0.87       773
-   macro avg       0.87      0.87      0.87       773
-weighted avg       0.87      0.87      0.87       773
-
-Accuracy= 86.546 %
-Macro-averaged Precision = 0.866 %
-Micro-averaged Precision = 0.865 %
-Macro-averaged Recall = 0.865 %
-Micro-averaged Recall = 0.865 %
-Macro-averaged F1 = 0.865 %
-Micro-averaged F1 = 0.865 %
-===============
-'Class', 00, 'against', 12 -> TestAcc: 0.9806
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.98      0.98      0.98       390
-           1       0.98      0.98      0.98       383
-
-    accuracy                           0.98       773
-   macro avg       0.98      0.98      0.98       773
-weighted avg       0.98      0.98      0.98       773
-
-Accuracy= 98.060 %
-Macro-averaged Precision = 0.981 %
-Micro-averaged Precision = 0.981 %
-Macro-averaged Recall = 0.981 %
-Micro-averaged Recall = 0.981 %
-Macro-averaged F1 = 0.981 %
-Micro-averaged F1 = 0.981 %
-===============
-'Class', 00, 'against', 13 -> TestAcc: 0.9690
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.96      0.98      0.97       390
-           1       0.98      0.95      0.97       383
-
-    accuracy                           0.97       773
-   macro avg       0.97      0.97      0.97       773
-weighted avg       0.97      0.97      0.97       773
-
-Accuracy= 96.895 %
-Macro-averaged Precision = 0.970 %
-Micro-averaged Precision = 0.969 %
-Macro-averaged Recall = 0.969 %
-Micro-averaged Recall = 0.969 %
-Macro-averaged F1 = 0.969 %
-Micro-averaged F1 = 0.969 %
-===============
-'Class', 00, 'against', 14 -> TestAcc: 1.0000
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00       390
-           1       1.00      1.00      1.00       383
-
-    accuracy                           1.00       773
-   macro avg       1.00      1.00      1.00       773
-weighted avg       1.00      1.00      1.00       773
-
-Accuracy= 100.000 %
-Macro-averaged Precision = 1.000 %
-Micro-averaged Precision = 1.000 %
-Macro-averaged Recall = 1.000 %
-Micro-averaged Recall = 1.000 %
-Macro-averaged F1 = 1.000 %
-Micro-averaged F1 = 1.000 %
-===============
-'Class', 00, 'against', 15 -> TestAcc: 0.6300
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.63      0.65      0.64       390
-           1       0.63      0.61      0.62       383
-
-    accuracy                           0.63       773
-   macro avg       0.63      0.63      0.63       773
-weighted avg       0.63      0.63      0.63       773
-
-Accuracy= 63.001 %
-Macro-averaged Precision = 0.630 %
-Micro-averaged Precision = 0.630 %
-Macro-averaged Recall = 0.630 %
-Micro-averaged Recall = 0.630 %
-Macro-averaged F1 = 0.630 %
-Micro-averaged F1 = 0.630 %
-===============
-'Class', 00, 'against', 16 -> TestAcc: 0.8590
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.86      0.85      0.86       390
-           1       0.85      0.86      0.86       383
-
-    accuracy                           0.86       773
-   macro avg       0.86      0.86      0.86       773
-weighted avg       0.86      0.86      0.86       773
-
-Accuracy= 85.899 %
-Macro-averaged Precision = 0.859 %
-Micro-averaged Precision = 0.859 %
-Macro-averaged Recall = 0.859 %
-Micro-averaged Recall = 0.859 %
-Macro-averaged F1 = 0.859 %
-Micro-averaged F1 = 0.859 %
-===============
-'Class', 00, 'against', 17 -> TestAcc: 0.9120
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100, 50), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.90      0.92      0.91       390
-           1       0.92      0.90      0.91       383
-
-    accuracy                           0.91       773
-   macro avg       0.91      0.91      0.91       773
-weighted avg       0.91      0.91      0.91       773
-
-Accuracy= 91.203 %
-Macro-averaged Precision = 0.912 %
-Micro-averaged Precision = 0.912 %
-Macro-averaged Recall = 0.912 %
-Micro-averaged Recall = 0.912 %
-Macro-averaged F1 = 0.912 %
-Micro-averaged F1 = 0.912 %
-===============
-'Class', 00, 'against', 18 -> TestAcc: 0.9314
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'learning_rate_init': 0.001}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.88      1.00      0.94       390
-           1       1.00      0.86      0.93       383
-
-    accuracy                           0.93       773
-   macro avg       0.94      0.93      0.93       773
-weighted avg       0.94      0.93      0.93       773
-
-Accuracy= 93.144 %
-Macro-averaged Precision = 0.940 %
-Micro-averaged Precision = 0.931 %
-Macro-averaged Recall = 0.931 %
-Micro-averaged Recall = 0.931 %
-Macro-averaged F1 = 0.931 %
-Micro-averaged F1 = 0.931 %
-===============
-'Class', 00, 'against', 19 -> TestAcc: 0.9276
-Best parameters: {'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.92      0.94      0.93       390
-           1       0.94      0.91      0.93       383
-
-    accuracy                           0.93       773
-   macro avg       0.93      0.93      0.93       773
-weighted avg       0.93      0.93      0.93       773
-
-Accuracy= 92.755 %
-Macro-averaged Precision = 0.928 %
-Micro-averaged Precision = 0.928 %
-Macro-averaged Recall = 0.927 %
-Micro-averaged Recall = 0.928 %
-Macro-averaged F1 = 0.928 %
-Micro-averaged F1 = 0.928 %
-===============
-'Class', 00, 'against', 20 -> TestAcc: 0.9004
-Best parameters: {'alpha': 0.001, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.89      0.92      0.90       390
-           1       0.91      0.89      0.90       383
-
-    accuracy                           0.90       773
-   macro avg       0.90      0.90      0.90       773
-weighted avg       0.90      0.90      0.90       773
-
-Accuracy= 90.039 %
-Macro-averaged Precision = 0.901 %
-Micro-averaged Precision = 0.900 %
-Macro-averaged Recall = 0.900 %
-Micro-averaged Recall = 0.900 %
-Macro-averaged F1 = 0.900 %
-Micro-averaged F1 = 0.900 %
-===============
-'Class', 00, 'against', 21 -> TestAcc: 0.9172
-Best parameters: {'alpha': 0.01, 'hidden_layer_sizes': (100,), 'learning_rate_init': 0.01}
-Classification Report =
-              precision    recall  f1-score   support
-
-           0       0.92      0.92      0.92       390
-           1       0.92      0.91      0.92       383
-
-    accuracy                           0.92       773
-   macro avg       0.92      0.92      0.92       773
-weighted avg       0.92      0.92      0.92       773
-
-Accuracy= 91.721 %
-Macro-averaged Precision = 0.917 %
-Micro-averaged Precision = 0.917 %
-Macro-averaged Recall = 0.917 %
-Micro-averaged Recall = 0.917 %
-Macro-averaged F1 = 0.917 %
-Micro-averaged F1 = 0.917 %
+Accuracy= 92.238 %
+Macro-averaged Precision = 0.923 %
+Micro-averaged Precision = 0.922 %
+Macro-averaged Recall = 0.923 %
+Micro-averaged Recall = 0.922 %
+Macro-averaged F1 = 0.922 %
+Micro-averaged F1 = 0.922 %
 ===============
